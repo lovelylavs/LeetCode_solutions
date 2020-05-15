@@ -68,7 +68,16 @@ class Trie {
         return true;
     }
 }
+
 ```
+### Advantages over Hash Table approach
+
+Although hash table has O(1) time complexity for looking for a key, it is not efficient in the following operations :
+
+Finding all keys with a common prefix.
+Enumerating a dataset of strings in lexicographical order
+
+trie outperforms hash table, is that as hash table increases in size, there are lots of hash collisions and the search time complexity could deteriorate to O(n), where nn is the number of keys inserted. Trie could use less space compared to Hash Table when storing many keys with the same prefix. In this case using trie has only O(m)O(m) time complexity, where mm is the key length. Searching for a key in a balanced tree costs O(mlogn) time complexity.
 
 ### Time Complexity
 
